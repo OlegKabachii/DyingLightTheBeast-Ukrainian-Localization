@@ -1,10 +1,10 @@
-# Published combined v2 release
-4819c2cd1bc807a889ff588bc395fd6ccaf651c5e3a22955be42af86204f233f  DyingLightTheBeast_Ukrainian_v2.0.zip
+# Published v1.0.1 release
+30ddaef00a3839e191f00c114387104330391f6205959622d79db245a5106459  DyingLightTheBeast_Ukrainian_v1.0.1.zip
 
 # Installer binary contained in that release
-e12c44d96036db423c512650978842595b07ee7f275580611a1aceb0fac10877  UkrainianLocalizationInstaller.exe
+b7d6181866f000536afb3369d39a4e603d0a008b389f4748970e68f976764dc6  UkrainianLocalizationInstaller.exe
 
 # Localization payload contained in that release
 a85972c3592e2aff6d3a7f441beb3c0db0143744fdac4df19f5e26e8b05ba3b8  data/data0.pak
 666dbcbdcd256c70c80354f2416143f02dc3cb8adfe29fe92a64b2858ad6df1f  data/dataen.pak
-feea2554812d1ee1fa281a8b6340862e1620316fe738515521fc48334964640b  data/gui_common_pc.rpack
+a031d26e342bd84ea1dfe3f8da69e2c903211ff52e12665e6c947e2d4a16a140  data/gui_common_pc.rpack

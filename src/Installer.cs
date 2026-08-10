@@ -39,7 +39,7 @@ namespace UkrainianLocalizationInstaller
 
     internal sealed class InstallerForm : Form
     {
-        private const string ProductTitle = "Dying Light: The Beast — Ukrainian Localization v2.0";
+        private const string ProductTitle = "Dying Light: The Beast — Ukrainian Localization v1.0.1";
         private const string BackupFolderName = "UkrainianLocalizationBackup_v2";
         private const string StateFileName = "install_state.txt";
         private readonly TextBox pathBox = new TextBox();
@@ -53,7 +53,7 @@ namespace UkrainianLocalizationInstaller
         {
             new PayloadItem { Name="data0.pak", RelativeTarget=@"ph_ft\work\data0.pak", Sha256="a85972c3592e2aff6d3a7f441beb3c0db0143744fdac4df19f5e26e8b05ba3b8", Size=1220062 },
             new PayloadItem { Name="dataen.pak", RelativeTarget=@"ph_ft\work\data_lang\dataen.pak", Sha256="666dbcbdcd256c70c80354f2416143f02dc3cb8adfe29fe92a64b2858ad6df1f", Size=1445895 },
-            new PayloadItem { Name="gui_common_pc.rpack", RelativeTarget=@"ph_ft\work\data_platform\pc\assets\gui_common_pc.rpack", Sha256="feea2554812d1ee1fa281a8b6340862e1620316fe738515521fc48334964640b", Size=1606514752 }
+            new PayloadItem { Name="gui_common_pc.rpack", RelativeTarget=@"ph_ft\work\data_platform\pc\assets\gui_common_pc.rpack", Sha256="a031d26e342bd84ea1dfe3f8da69e2c903211ff52e12665e6c947e2d4a16a140", Size=1606514752 }
         };
 
         public InstallerForm()
@@ -66,7 +66,7 @@ namespace UkrainianLocalizationInstaller
             Font = new Font("Segoe UI", 10F);
 
             AddLabel(ProductTitle, 24, 20, 18F, FontStyle.Bold);
-            AddLabel("Автор: Oleg Kabachii   |   Версія: 2.0", 26, 58, 10F, FontStyle.Regular);
+            AddLabel("Автор: Oleg Kabachii   |   Версія: 1.0.1", 26, 58, 10F, FontStyle.Regular);
             AddLabel("Мова гри у Steam має залишатися English. Перед операцією закрийте гру.", 26, 84, 10F, FontStyle.Regular);
             AddLabel("Папка гри:", 26, 119, 10F, FontStyle.Regular);
 

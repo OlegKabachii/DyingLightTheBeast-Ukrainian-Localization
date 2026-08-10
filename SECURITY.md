@@ -45,6 +45,10 @@ Before the first installation, any existing target files are copied to the visib
 during updates. Uninstall restores files that existed before installation and
 removes override files that did not previously exist.
 
+The legacy `_v2` suffix is intentionally retained for upgrade compatibility with
+the first public installer packaging; it does not represent the current release
+version and the directory is not hidden.
+
 ## Explicitly absent behavior
 
 The installer does not:

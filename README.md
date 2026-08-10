@@ -3,7 +3,7 @@
 Open-source installer for the Ukrainian localization of **Dying Light: The Beast**.
 
 **Author:** Oleg Kabachii  
-**Release:** 2.0  
+**Release:** 1.0.1
 **Nexus Mods:** [Mod 964](https://www.nexusmods.com/dyinglightthebeast/mods/964)
 
 ## Purpose
@@ -34,7 +34,7 @@ See [SECURITY.md](SECURITY.md) for the complete behavior and threat-surface summ
 
 ## Build
 
-The uploaded v2 installer was built with the 64-bit Microsoft .NET Framework C#
+The published v1.0.1 installer was built with the 64-bit Microsoft .NET Framework C#
 compiler included with Windows. No third-party build tools are required.
 
 ```bat
@@ -53,8 +53,10 @@ src/
 build.cmd              Transparent local build command
 BUILD.md               Reproducible build instructions
 SECURITY.md            Security behavior and boundaries
-SHA256SUMS.txt         Published v2 binary/archive hashes
+SHA256SUMS.txt         Published release binary/archive hashes
 LICENSE                Source-code license and third-party notice
+CHANGELOG.md           Semantic Versioning release history
+tools/                 Auditable font-atlas correction utility
 ```
 
 ## Usage
@@ -72,9 +74,14 @@ data/
 Keep the Steam game language set to **English** and close the game before install,
 update, or uninstall operations.
 
+## Versioning
+
+This project follows Semantic Versioning. `1.0.1` is a patch release correcting
+Ukrainian `Є/є` glyph selection without changing gameplay behavior or localization
+scope.
+
 ## Disclaimer
 
 This is an independent community localization project. It is not affiliated with,
 endorsed by, or sponsored by Techland. Dying Light, Dying Light: The Beast, and all
 original game assets and trademarks belong to their respective rights holders.
-

@@ -5,3 +5,5 @@ build/
 *.tmp
 *.zip
 data/
+__pycache__/
+*.pyc
