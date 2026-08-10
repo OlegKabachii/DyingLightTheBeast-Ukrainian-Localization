@@ -1,0 +1,7 @@
+build/
+*.user
+*.suo
+*.pdb
+*.tmp
+*.zip
+data/
