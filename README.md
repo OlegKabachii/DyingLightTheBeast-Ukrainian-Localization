@@ -61,15 +61,26 @@ tools/                 Auditable font-atlas correction utility
 
 ## Usage
 
-The compiled installer expects the release payload in a sibling `data` directory:
+The recommended Nexus Mods download is currently the conventional manual ZIP,
+which contains no executable files. See [MANUAL_INSTALL.md](MANUAL_INSTALL.md) for
+installation, updating, verification, and removal instructions.
+
+The graphical installer is distributed separately and remains optional.
+
+The optional installer uses the same extracted directory as the Required Data ZIP:
 
 ```text
 UkrainianLocalizationInstaller.exe
-data/
-  data0.pak
-  dataen.pak
-  gui_common_pc.rpack
+ph_ft/
+  work/
+    data0.pak
+    data_lang/dataen.pak
+    data_platform/pc/assets/gui_common_pc.rpack
 ```
+
+Extract both archives into the same ordinary folder, then run the installer. This
+keeps a single payload layout usable for either manual copying or automatic
+installation, without duplicating the large localization data.
 
 Keep the Steam game language set to **English** and close the game before install,
 update, or uninstall operations.

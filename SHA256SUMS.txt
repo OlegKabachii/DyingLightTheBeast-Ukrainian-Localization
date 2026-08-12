@@ -1,10 +1,13 @@
-# Published v1.0.1 release
-30ddaef00a3839e191f00c114387104330391f6205959622d79db245a5106459  DyingLightTheBeast_Ukrainian_v1.0.1.zip
+# Required Data / manual v1.0.1 release (no executable files)
+d9c96f0734b0e8f54d19e7aafbed69f817aa1ef2b7c309ea757b4cd209c07cca  DyingLightTheBeast_Ukrainian_v1.0.1_Manual.zip
 
-# Installer binary contained in that release
-b7d6181866f000536afb3369d39a4e603d0a008b389f4748970e68f976764dc6  UkrainianLocalizationInstaller.exe
+# Optional installer-only ZIP (no embedded localization payload)
+dfef5fe07a3d2c296a61884d62b0a70b8d0ae7c912ebf67528237ab0e611ea62  DyingLightTheBeast_Ukrainian_Installer_v1.0.1.zip
 
-# Localization payload contained in that release
-a85972c3592e2aff6d3a7f441beb3c0db0143744fdac4df19f5e26e8b05ba3b8  data/data0.pak
-666dbcbdcd256c70c80354f2416143f02dc3cb8adfe29fe92a64b2858ad6df1f  data/dataen.pak
-a031d26e342bd84ea1dfe3f8da69e2c903211ff52e12665e6c947e2d4a16a140  data/gui_common_pc.rpack
+# Optional installer binary (uses the sibling ph_ft Required Data layout)
+e8d87fa40088f3ee582643726ab1b00eb5b54e2f0a847f01554cdc7cdbaa083e  UkrainianLocalizationInstaller.exe
+
+# Localization payload contained in Required Data
+a85972c3592e2aff6d3a7f441beb3c0db0143744fdac4df19f5e26e8b05ba3b8  ph_ft/work/data0.pak
+666dbcbdcd256c70c80354f2416143f02dc3cb8adfe29fe92a64b2858ad6df1f  ph_ft/work/data_lang/dataen.pak
+a031d26e342bd84ea1dfe3f8da69e2c903211ff52e12665e6c947e2d4a16a140  ph_ft/work/data_platform/pc/assets/gui_common_pc.rpack

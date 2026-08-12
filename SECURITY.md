@@ -18,7 +18,7 @@ must already have permission to write to the selected game directory.
 
 ## Files read
 
-- sibling release files under `data`;
+- sibling Required Data files under `ph_ft\work`;
 - the selected Dying Light: The Beast directory;
 - existing localization override files for backup and verification;
 - Steam installation paths and `libraryfolders.vdf` for automatic discovery;

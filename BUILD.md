@@ -56,10 +56,10 @@ Calculate the binary hash:
 Get-FileHash .\build\UkrainianLocalizationInstaller.exe -Algorithm SHA256
 ```
 
-The v1.0.1 binary distributed in the release ZIP has SHA-256:
+The current v1.0.1 binary distributed in the optional Installer ZIP has SHA-256:
 
 ```text
-b7d6181866f000536afb3369d39a4e603d0a008b389f4748970e68f976764dc6
+e8d87fa40088f3ee582643726ab1b00eb5b54e2f0a847f01554cdc7cdbaa083e
 ```
 
 The legacy .NET Framework compiler may generate a new module-version identifier on
@@ -68,9 +68,10 @@ source-equivalent. Reviewers can compare behavior, metadata, imports, and source
 
 ## Packaging
 
-The executable is copied next to the separately distributed `data` directory. Do
-not embed payload files, create a self-extracting archive, or apply executable
-compression. The public release itself is a normal ZIP archive.
+The executable is packaged alone and reads the separately distributed Required
+Data from the sibling `ph_ft` directory. Extract both normal ZIP archives into the
+same folder. Do not embed payload files, create a self-extracting archive, or apply
+executable compression.
 
 ## Font-atlas utility
 

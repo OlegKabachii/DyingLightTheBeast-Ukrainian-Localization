@@ -155,7 +155,12 @@ namespace UkrainianLocalizationInstaller
             return root.TrimEnd(Path.DirectorySeparatorChar);
         }
 
-        private static string DataRoot { get { return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data"); } }
+        private static string PackageRoot { get { return AppDomain.CurrentDomain.BaseDirectory; } }
+
+        private static string PayloadSource(PayloadItem item)
+        {
+            return SafeTarget(PackageRoot, item.RelativeTarget);
+        }
 
         private static void EnsureGameClosed()
         {
@@ -172,8 +177,11 @@ namespace UkrainianLocalizationInstaller
         {
             foreach (PayloadItem item in Payload)
             {
-                string source = Path.Combine(DataRoot, item.Name);
-                if (!File.Exists(source)) throw new FileNotFoundException("У папці data відсутній файл " + item.Name, source);
+                string source = PayloadSource(item);
+                if (!File.Exists(source))
+                    throw new FileNotFoundException(
+                        "Не знайдено " + item.RelativeTarget + ". Розпакуйте архів Required Data і ZIP інсталятора в одну папку.",
+                        source);
                 FileInfo info = new FileInfo(source);
                 if (info.Length != item.Size) throw new InvalidDataException("Неправильний розмір payload: " + item.Name);
                 Log("Перевірка пакета: " + item.Name);
@@ -217,7 +225,7 @@ namespace UkrainianLocalizationInstaller
 
             foreach (PayloadItem item in Payload)
             {
-                string source = Path.Combine(DataRoot, item.Name);
+                string source = PayloadSource(item);
                 string target = SafeTarget(root, item.RelativeTarget);
                 Directory.CreateDirectory(Path.GetDirectoryName(target));
                 string temp = target + ".ua_v2_tmp";
